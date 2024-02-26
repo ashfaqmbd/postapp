@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Post App | Ashfaq Ahmed</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Post App</a>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+          <div class="main p-4">
+            <div class="card p-4">
+              <!-- <form> -->
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Description</label
+                >
+                <textarea
+                  class="form-control"
+                  id="description"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <div class="images-list d-flex">
+                  <img
+                    onclick="selectImage('images/1.jpg')"
+                    src="images/1.jpg"
+                    alt="" class="bg-image"
+                  />
+                  <img
+                    onclick="selectImage('images/2.jpg')"
+                    src="images/2.jpg"
+                    alt="" class="bg-image"
+                  />
+                  <img
+                    onclick="selectImage('images/3.jpg')"
+                    src="images/3.jpg"
+                    alt="" class="bg-image"
+                  />
+                  <img
+                    onclick="selectImage('images/4.jpg')"
+                    src="images/4.jpg"
+                    alt="" class="bg-image"
+                  />
+                  <img
+                    onclick="selectImage('images/5.jpg')"
+                    src="images/5.jpg"
+                    alt="" class="bg-image"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" onclick="addPost()">
+                Post
+              </button>
+              <!-- </form> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-7 col-lg-8">
+          <div id="posts" class="main p-4">
+            <!-- <div class="card">
+            <div class="card-header">@post</div>
+            
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                  <footer class="blockquote-footer">
+                    Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                  </footer>
+                </blockquote>
+              </div>
+                      </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
